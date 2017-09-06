@@ -1,0 +1,20 @@
+#cube {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+}
+
+#cube ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#cube ul li {
+  flex: 1 25%;
+  background: green;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
