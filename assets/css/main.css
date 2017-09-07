@@ -2,6 +2,7 @@
   border: 1px solid black;
   width: 500px;
   height: 500px;
+  box-sizing: border-box;
 }
 
 #cube ul {
@@ -12,7 +13,7 @@
   flex-wrap: wrap;
 }
 #cube ul li {
-  flex: 1 7%;
+  flex: 1 10%;
   background: green;
   padding: 10px;
   margin: 10px;
