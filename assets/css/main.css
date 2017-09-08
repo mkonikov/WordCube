@@ -120,6 +120,10 @@ button::-moz-focus-inner {
   text-align: center;
 }
 
+#cube ul li.highlight {
+	background: orange;
+}
+
 #cube ul li:before {
     content:'';
     float:left;
