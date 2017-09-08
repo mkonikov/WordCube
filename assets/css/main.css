@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,900');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,6 +26,8 @@ body {
 	line-height: 1;
 	color: black;
 	background: white;
+	font-family: 'Work Sans', sans-serif;
+
 }
 ol, ul {
 	list-style: none;
@@ -72,12 +76,24 @@ button::-moz-focus-inner {
     padding: 0;
 }
 
+#main {
+  display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+#welcome {
+	display: flex;
+	flex-direction: column;
+}
 
 #cube {
-  border: 1px solid black;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   box-sizing: border-box;
+	margin-right: 20px;
+	background: yellow;
+	border-radius: 12px;
+	padding: 15px;
 }
 
 #cube ul {
@@ -91,14 +107,29 @@ button::-moz-focus-inner {
   flex: 1 13%;
   background: green;
   padding: 10px;
-  margin: 10px;
+	border-radius: 9px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  margin: 15px;
+	font-size: 55px;
   cursor: pointer;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
 }
+
+#cube ul li:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}
 #timer {
   background: red;
   transition: width 1s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 10px;
 }
