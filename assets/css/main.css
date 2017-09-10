@@ -115,7 +115,7 @@ button::-moz-focus-inner {
 	font-size: 55px;
   cursor: pointer;
   color: white;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: bold;
   text-align: center;
 }
