@@ -130,16 +130,20 @@ button::-moz-focus-inner {
     padding-top:100%;
 }
 #score {
-	
+
 }
+#guessed-words li {
+  text-transform: uppercase;
+}
+
 #timer {
-  background: red;
+  background: gray;
   transition: width 1s;
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 10px;
 }
-#guessed-words li {
-  text-transform: uppercase;
+#timer.end {
+	background: red;
 }
