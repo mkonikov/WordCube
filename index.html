@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>WordCube</title>
     <script type="text/javascript" src="./lib/bundle.js"></script>
+    <script src="https://use.fontawesome.com/b4d42bf7d5.js"></script>
+
     <link rel="stylesheet" href="./assets/css/main.css">
   </head>
   <body>
     <nav>
-      <div id="timer" style="width: 0%; height: 10px;">
+      <div id="timer" style="width: 0%;">
       </div>
     </nav>
     <div id="main">
@@ -16,17 +18,37 @@
 
     <aside id="welcome">
       <div id="title">
-        WordCube
+        <div id="title-word">
+          <div>
+            WO
+          </div>
+          <div>
+            RD
+          </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div id="title-cube">
+          <div>
+            CU
+          </div>
+          <div>BE</div>
+        </div>
+
       </div>
       <div id="instructions">
         <button type="button" name="button" id="start">Start</button>
-        Welcome to WordCube!
+        <p>Welcome to WordCube!</p>
+        <p> The goal of the game is simple. Form as many words as possible in under two minutes. The words are scored according to length, with the minimum being four letters. Have fun!</p>
       </div>
 
-      <footer>
-        <a href="http://mkonikov.com">Potfolio</a>
-        <a href="http://github.com/mkonikov">Github</a>
-        <a href="https://www.linkedin.com/in/mkonikov">LinkedIn</a>
+      <footer> &copy; Mendel Konikov 
+
+ <a href="http://mkonikov.com"><i class="fa fa-briefcase" aria-hidden="true"></i> Portfolio</a>
+
+ <a href="https://github.com/mkonikov/WordCube"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+
+ <a href="https://www.linkedin.com/in/mkonikov"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
       </footer>
 
     </aside>
@@ -35,12 +57,10 @@
       <ul id="guessed-words">
 
       </ul>
-      <div id="score">
 
-      </div>
 
     </aside>
-    <section>
+    <section id="game-area">
       <div id="selection">
 
       </div>
@@ -50,7 +70,14 @@
         </ul>
       </div>
 
+<div id="score-contain">
+  SCORE: <span id="score"></span>
+</div>
+
     </section>
+
+
     </div>
+
   </body>
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,900');
+@import url('https://fonts.googleapis.com/css?family=Sarala:400,700');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -25,8 +25,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	line-height: 1;
 	color: black;
-	background: white;
-	font-family: 'Work Sans', sans-serif;
+	background: #fafafa;
+	min-height: 100vh;
+	font-family: 'Sarala', sans-serif;
 
 }
 ol, ul {
@@ -79,7 +80,9 @@ button::-moz-focus-inner {
 #main {
   display: flex;
 	width: 100%;
+	min-height: 100vh;
 	justify-content: space-between;
+	padding-top: 20px;
 }
 #welcome {
 	display: flex;
@@ -87,13 +90,16 @@ button::-moz-focus-inner {
 }
 
 #cube {
-  width: 600px;
-  height: 600px;
+  width: 80vh;
+  height: 80vh;
   box-sizing: border-box;
-	margin-right: 20px;
-	background: yellow;
-	border-radius: 12px;
+	background: white;
 	padding: 15px;
+	box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.2);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+
 }
 
 #cube ul {
@@ -105,23 +111,24 @@ button::-moz-focus-inner {
 }
 #cube ul li {
   flex: 1 13%;
-  background: green;
+  background: #d4f0fa;
   padding: 10px;
-	border-radius: 9px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
   margin: 15px;
 	font-size: 55px;
   cursor: pointer;
-  color: white;
+  color: black;
   text-transform: capitalize;
-  font-weight: bold;
   text-align: center;
+}
+#cube ul li:nth-child(even) {
+  background: #d5ebf3;
 }
 
 #cube ul li.highlight {
-	background: orange;
+	background: #83a4b1;
 }
 
 #cube ul li:before {
@@ -129,11 +136,73 @@ button::-moz-focus-inner {
     float:left;
     padding-top:100%;
 }
-#score {
+#score-contain {
+	position: absolute;
+	bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
 
+}
+#title {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  display: flex;
+	flex-wrap: wrap;
+}
+#title > div {
+	flex: 1 25%;
+}
+#title-cube, #title-word {
+	border: 1px solid black;
+
+}
+#title > div:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}
+button#start {
+	cursor: pointer;
+  background: #83a4b1;
+  padding: 5px 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 61px;
+  font-size: 25px;
+  color: white;
 }
 #guessed-words li {
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+	padding: 5px 0;
+}
+#guessed-words li div:first-child {
+	font-weight: bold;
+}
+
+#selection {
+	height: 30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	text-transform: uppercase;
+}
+
+#game-area {
+	display: flex;
+	padding: 5vh;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 #timer {
@@ -142,8 +211,8 @@ button::-moz-focus-inner {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 10px;
+	height: 20px;
 }
 #timer.end {
-	background: red;
+	background: #ed4957;
 }
