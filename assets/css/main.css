@@ -129,6 +129,9 @@ button::-moz-focus-inner {
     float:left;
     padding-top:100%;
 }
+#score {
+	
+}
 #timer {
   background: red;
   transition: width 1s;
@@ -136,4 +139,7 @@ button::-moz-focus-inner {
 	top: 0;
 	left: 0;
 	height: 10px;
+}
+#guessed-words li {
+  text-transform: uppercase;
 }

@@ -2,7 +2,7 @@
 
 ## About
 
-WordCube is a fun word game where players must formulate as many words as possible using variations of the letters that appear on a the 6x6 grid in under 90 seconds. Score is calculated based on length of words formulated (minimum four letters).
+WordCube is a fun word game where players must formulate as many words as possible using variations of the letters that appear on a the 5x5 grid in under 120 seconds. Score is calculated based on length of words formulated (minimum four letters).
 
 ## Functionality & MVP
 
@@ -20,7 +20,7 @@ The game will be rendered on a single page with controls to start and reset game
 
 ## Technologies
 
-The project will be implemented using HTML, CSS, JavaScript and jQuery, with webpack to bundle the JS files.
+The project will be implemented using HTML, CSS, and vanilla JavaScript, with webpack to bundle the JS files.
 
 ## Implementation Timeline
 
