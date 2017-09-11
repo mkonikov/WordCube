@@ -1,0 +1,74 @@
+#game-area {
+	display: flex;
+	padding: 5vh;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#score-contain {
+	position: absolute;
+	bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+  color: #17756a;
+}
+
+#selection {
+	height: 30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	color: #2e667d;
+	text-transform: uppercase;
+}
+
+#cube {
+  width: 80vh;
+  height: 80vh;
+  box-sizing: border-box;
+	background: white;
+	padding: 15px;
+	box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.2);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: url('../cursor.svg') 25 25, pointer;
+}
+
+#cube ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#cube ul li {
+  flex: 1 13%;
+  background: #d4f0fa;
+  padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  margin: 15px;
+	font-size: 6vh;
+  color: black;
+  text-transform: capitalize;
+  text-align: center;
+}
+#cube ul li:nth-child(even) {
+  background: #d5ebf3;
+}
+
+#cube ul li.highlight {
+	background: #19756a;
+}
+
+#cube ul li:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}

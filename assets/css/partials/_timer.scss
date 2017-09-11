@@ -1,0 +1,11 @@
+#timer {
+  background: #5fc1b6;
+  transition: width 1s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 20px;
+}
+#timer.end {
+	background: #ed4957;
+}

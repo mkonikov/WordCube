@@ -1,7 +1,7 @@
 {
   "name": "WordCube",
   "version": "1.0.0",
-  "description": "WordCube is a fun word game built with JavaScript and jQuery.",
+  "description": "WordCube is a fun word game built with vanilla JavaScript.",
   "main": "'./lib/entry.js'",
   "directories": {
     "doc": "docs"

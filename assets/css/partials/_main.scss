@@ -1,0 +1,30 @@
+#main {
+  display: flex;
+	width: 100%;
+	min-height: 100vh;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+aside {
+	padding: 5vh;
+}
+
+footer {
+	font-weight: bold;
+}
+
+footer, footer a {
+  color: #2d667d;
+  line-height: 1.5;
+}
+
+footer a {
+	font-weight: normal;
+	margin-right: 10px;
+	color: #2d667d;
+}
+
+footer i {
+	color: #82a4b0;
+}

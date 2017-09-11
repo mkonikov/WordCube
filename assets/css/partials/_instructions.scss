@@ -1,0 +1,37 @@
+#welcome {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 400px;
+}
+
+button#start {
+	cursor: pointer;
+  background: #83a4b1;
+  padding: 5px 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 61px;
+  font-size: 25px;
+  color: white;
+}
+
+#instructions {
+	line-height: 1.5;
+	margin-bottom: 40px;
+
+	h4 {
+	  font-size: 30px;
+	  color: #2e667d;
+		line-height: 1.2;
+		margin-bottom: 5px;
+	}
+
+	p {
+		margin-bottom: 12px;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+}

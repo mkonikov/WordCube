@@ -1,4 +1,6 @@
 node_modules
 bundle.js.map
 .DS_Store
+output.css.map
+.sass-cache
 bs.js
