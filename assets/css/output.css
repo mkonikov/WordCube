@@ -118,7 +118,7 @@ button::-moz-focus-inner {
   height: 80vh;
   box-sizing: border-box;
   background: white;
-  padding: 15px;
+  padding: 18px;
   box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.2);
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -139,7 +139,7 @@ button::-moz-focus-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px;
+  margin: 18px;
   font-size: 6vh;
   color: black;
   text-transform: capitalize;
