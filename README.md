@@ -50,12 +50,8 @@ checkMove(letter) {
   const xNeighbor = [-1, 0, 1].includes(diff[0]);
   const yNeighbor = [-1, 0, 1].includes(diff[1]);
   const pastPos = this.letters.some(el => letter.samePosition(el));
-  if (actuallyMoved && !pastPos &&
-    xNeighbor && yNeighbor) {
-    return true;
-  } else {
-    return false;
-  }
+  return (actuallyMoved && !pastPos &&
+    xNeighbor && yNeighbor);
 
 }
 ```
