@@ -1,23 +1,28 @@
 #guessed-contain {
   min-width: 230px;
-  max-height: 85vh;
-  overflow: auto;
-}
-#guessed-contain h3 {
-	font-size: 25px;
-	font-weight: bold;
-	margin-bottom: 20px;
-  color: #2d667d;
-}
-#guessed-words li {
-  text-transform: uppercase;
-  display: flex;
-	color: #17756a;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(95, 193, 181, 0.2);
-	padding: 5px 0;
 
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2d667d;
+  }
 }
-#guessed-words li div:first-child {
-	font-weight: bold;
+#guessed-words {
+  max-height: calc(85vh - 45px);
+  overflow: auto;
+  padding-right: 10px;
+
+  li {
+    text-transform: uppercase;
+    display: flex;
+    color: #17756a;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(95, 193, 181, 0.2);
+    padding: 5px 0;
+
+    div:first-child {
+      font-weight: bold;
+    }
+  }
 }
