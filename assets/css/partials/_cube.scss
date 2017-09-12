@@ -31,7 +31,7 @@
   height: 80vh;
   box-sizing: border-box;
 	background: white;
-	padding: 18px;
+	padding: 20px;
 	box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.2);
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -53,7 +53,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  margin: 18px;
+  margin: 20px;
 	font-size: 6vh;
   color: black;
   text-transform: capitalize;
@@ -71,4 +71,16 @@
     content:'';
     float:left;
     padding-top:100%;
+}
+
+@media only screen and (max-height: 660px) {
+  #cube {
+		padding: 0px;
+		cursor: url('../small_cursor.svg') 25 25, pointer;
+
+		ul li {
+			font-size: 4.5vh;
+			margin:15px;
+		}
+	}
 }

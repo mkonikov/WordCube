@@ -35,3 +35,18 @@
 #title-cube span, #title-word span {
 	flex: 1 50%;
 }
+
+@media only screen and (max-height: 660px) {
+  #title {
+    height: 125px;
+
+    > div {
+      flex-basis: 45%;
+      margin: 5px;
+    }
+
+    .extra {
+      display: none;
+    }
+  }
+}

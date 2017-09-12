@@ -118,7 +118,7 @@ button::-moz-focus-inner {
   height: 80vh;
   box-sizing: border-box;
   background: white;
-  padding: 18px;
+  padding: 20px;
   box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.2);
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -139,7 +139,7 @@ button::-moz-focus-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 18px;
+  margin: 20px;
   font-size: 6vh;
   color: black;
   text-transform: capitalize;
@@ -156,6 +156,13 @@ button::-moz-focus-inner {
   float: left;
   padding-top: 100%; }
 
+@media only screen and (max-height: 660px) {
+  #cube {
+    padding: 0px;
+    cursor: url("../small_cursor.svg") 25 25, pointer; }
+    #cube ul li {
+      font-size: 4.5vh;
+      margin: 15px; } }
 #title {
   font-size: 45px;
   margin-top: -20px;
@@ -191,6 +198,14 @@ button::-moz-focus-inner {
 #title-cube span, #title-word span {
   flex: 1 50%; }
 
+@media only screen and (max-height: 660px) {
+  #title {
+    height: 125px; }
+    #title > div {
+      flex-basis: 45%;
+      margin: 5px; }
+    #title .extra {
+      display: none; } }
 #guessed-contain {
   min-width: 230px;
   max-height: 85vh;
