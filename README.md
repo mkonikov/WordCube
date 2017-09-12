@@ -14,7 +14,7 @@ The `Game` class controls the entire game, passing on responsibilities to tthe `
 
 A `Dice` class returns a new rolled dice each time using the official Big Boggle dice and letter count.
 
-```
+```javascript
 static rollDice() {
   const diceArrays = [....];
   let i;
@@ -38,7 +38,7 @@ When each tile is created, the `Cube` class keeps track of the DOM nodes in an o
 
  After a letter is hovered over, the `Selection` class checks to see if it is a valid move by ensuring that a) this letter was not hovered during this selection, b) this letter is touching the previous letter on of of its eight sides by calculating all the diffs and ensuring it's one of the legal game plays and c) that this letter is the not the same as the previous letter in the selection.
 
-```
+```javascript
 checkMove(letter) {
   if (this.letters.length < 1) {
     return true;
@@ -67,7 +67,7 @@ If this is a unique guess the guess will then be checked against the dictionary 
 
 For maximum speed and efficiency the dictionary is checked with a binary search to achieve O(log n) complexity.
 
-```
+```javascript
 static searchDictionary(dictionary, word) {
   if (dictionary.length < 1) return false;
 
