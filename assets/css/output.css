@@ -100,8 +100,22 @@ button::-moz-focus-inner {
   position: absolute;
   bottom: 20px;
   font-size: 20px;
-  font-weight: bold;
-  color: #17756a; }
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5vh; }
+  #score-contain strong {
+    font-weight: bold; }
+  #score-contain span {
+    padding: 7px 10px;
+    display: none; }
+    #score-contain span.show-score {
+      display: inline; }
+  #score-contain #high-score {
+    background: #d5ebf3; }
+  #score-contain #score {
+    background: #d4f0fa; }
 
 #selection {
   height: 30px;

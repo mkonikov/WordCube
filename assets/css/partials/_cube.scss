@@ -11,8 +11,32 @@
 	position: absolute;
 	bottom: 20px;
 	font-size: 20px;
-	font-weight: bold;
-  color: #17756a;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 5vh;
+
+	strong {
+		font-weight: bold;
+	}
+
+	span {
+		padding: 7px 10px;
+		// margin: 0 10px;
+		display: none;
+
+		&.show-score {
+			display: inline;
+		}
+	}
+
+	#high-score {
+	  background: #d5ebf3;
+	}
+	#score {
+	  background: #d4f0fa;
+	}
 }
 
 #selection {
