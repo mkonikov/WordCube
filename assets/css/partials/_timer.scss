@@ -5,7 +5,8 @@
 	top: 0;
 	left: 0;
 	height: 20px;
-}
-#timer.end {
-	background: #ed4957;
+  
+  &.end {
+    background: #ed4957;
+  }
 }

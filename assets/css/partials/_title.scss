@@ -11,10 +11,11 @@
 	-webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-}
-#title > div {
-	flex: 1 50%;
-	padding: 5px;
+
+  > div {
+    flex: 1 50%;
+    padding: 5px;
+  }
 }
 #title-word {
   background: #2c667d;
@@ -31,9 +32,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-}
-#title-cube span, #title-word span {
-	flex: 1 50%;
+
+  span {
+    flex: 1 50%;
+  }
 }
 
 @media only screen and (max-height: 800px) {

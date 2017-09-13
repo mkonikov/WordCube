@@ -13,19 +13,19 @@ aside {
 
 footer {
 	font-weight: bold;
+
+  a {
+    font-weight: normal;
+    margin-right: 10px;
+    color: #2d667d;
+  }
+
+  i {
+    color: #82a4b0;
+  }
 }
 
 footer, footer a {
   color: #2d667d;
   line-height: 1.5;
-}
-
-footer a {
-	font-weight: normal;
-	margin-right: 10px;
-	color: #2d667d;
-}
-
-footer i {
-	color: #82a4b0;
 }
