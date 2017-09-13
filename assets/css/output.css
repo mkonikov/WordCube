@@ -79,7 +79,7 @@ button::-moz-focus-inner {
 
 #timer {
   background: #5fc1b6;
-  transition: width 1s;
+  transition: width 1s linear;
   position: fixed;
   top: 0;
   left: 0;
@@ -135,7 +135,7 @@ button::-moz-focus-inner {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  cursor: url("../cursor.svg") 25 25, pointer; }
+  cursor: url("../cursor.svg") 25 25, cell; }
   #cube ul {
     list-style: none;
     padding: 0;
