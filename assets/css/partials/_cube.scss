@@ -81,6 +81,17 @@
   color: black;
   text-transform: capitalize;
   text-align: center;
+
+	&.animate {
+		opacity: 0;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-transform: scale(0.4);
+		transform: scale(0.4);
+		-webkit-animation: popUp .6s ease-in forwards;
+		animation: popUp .6s ease-in forwards;
+	}
+
 }
 #cube ul li:nth-child(even) {
   background: #d5ebf3;
@@ -94,6 +105,18 @@
     content:'';
     float:left;
     padding-top:100%;
+}
+
+@-webkit-keyframes popUp {
+	0% { }
+	70% { -webkit-transform: scale(1.1); opacity: .8; -webkit-animation-timing-function: ease-out; }
+	100% { -webkit-transform: scale(1); opacity: 1; }
+}
+
+@keyframes popUp {
+	0% { }
+	70% { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: .8; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+	100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
 }
 
 @media only screen and (max-height: 800px) {
