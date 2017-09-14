@@ -292,9 +292,9 @@ footer, footer a {
   justify-content: space-between;
   max-width: 400px; }
 
-button#start {
+#start {
   cursor: pointer;
-  background: #83a4b1;
+  background: #17756a;
   padding: 5px 19px;
   font-weight: bold;
   text-transform: uppercase;
@@ -304,7 +304,8 @@ button#start {
 
 #instructions {
   line-height: 1.5;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  cursor: default; }
   #instructions h4 {
     font-size: 30px;
     color: #2e667d;
@@ -314,5 +315,31 @@ button#start {
     margin-bottom: 12px; }
   #instructions strong {
     font-weight: bold; }
+
+#score-instructions {
+  cursor: help;
+  border-bottom: 1px solid #95bbca; }
+
+#score-scheme {
+  display: none;
+  border-collapse: collapse;
+  box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.2); }
+  #score-scheme thead {
+    border-bottom: 1px solid #17756a;
+    color: #2d667d; }
+  #score-scheme th {
+    font-weight: bold;
+    text-transform: uppercase; }
+  #score-scheme tr:nth-child(even) {
+    background: #eff6f9; }
+  #score-scheme th, #score-scheme td {
+    padding: 5px 10px; }
+  #score-scheme.active {
+    display: block;
+    position: absolute;
+    left: 6vh;
+    background: white;
+    padding: 10px;
+    border-radius: 6px; }
 
 /*# sourceMappingURL=output.css.map */

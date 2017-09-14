@@ -5,9 +5,9 @@
 	max-width: 400px;
 }
 
-button#start {
+#start {
 	cursor: pointer;
-  background: #83a4b1;
+  background: #17756a;
   padding: 5px 19px;
   font-weight: bold;
   text-transform: uppercase;
@@ -19,6 +19,7 @@ button#start {
 #instructions {
 	line-height: 1.5;
 	margin-bottom: 40px;
+	cursor: default;
 
 	h4 {
 	  font-size: 30px;
@@ -33,5 +34,44 @@ button#start {
 
 	strong {
 		font-weight: bold;
+	}
+}
+
+#score-instructions {
+	cursor: help;
+	border-bottom: 1px solid #95bbca;
+}
+
+#score-scheme {
+	display: none;
+	border-collapse: collapse;
+	box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.2);
+
+
+	thead {
+		border-bottom: 1px solid #17756a;
+		color: #2d667d;
+	}
+
+	th {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	tr:nth-child(even) {
+	  background: #eff6f9;
+	}
+
+	th, td {
+		padding: 5px 10px;
+	}
+
+	&.active {
+		display: block;
+		position: absolute;
+		left: 6vh;
+		background: white;
+		padding: 10px;
+		border-radius: 6px;
 	}
 }
