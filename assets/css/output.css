@@ -364,13 +364,13 @@ footer, footer a {
     padding: 50px;
     text-align: center;
     background: rgba(211, 240, 251, 0.8);
-    box-shadow: 0px 0px 20px 20px rgba(211, 240, 251, 0.8);
     color: #2d667d;
     text-transform: uppercase;
     font-size: 6vh;
     line-height: 1.5; }
     #game-over-modal #game-over h1 {
-      font-size: 11vh; }
+      font-size: 11vh;
+      line-height: 1.2; }
     #game-over-modal #game-over #play-again {
       font-size: 4vh;
       padding-left: 25px;
