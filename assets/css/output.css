@@ -365,11 +365,11 @@ footer, footer a {
     text-align: center;
     background: rgba(211, 240, 251, 0.8);
     color: #2d667d;
-    text-transform: uppercase;
     font-size: 6vh;
     line-height: 1.5; }
     #game-over-modal #game-over h1 {
       font-size: 11vh;
+      text-transform: uppercase;
       line-height: 1.2; }
     #game-over-modal #game-over #play-again {
       font-size: 4vh;
