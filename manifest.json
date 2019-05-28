@@ -13,7 +13,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/?source=pwa",
+  "start_url": "/WordCube?source=pwa",
   "background_color": "#30667e",
   "display": "standalone",
   "theme_color": "#30667e"
