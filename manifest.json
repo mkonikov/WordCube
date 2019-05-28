@@ -3,12 +3,12 @@
   "name": "WordCube",
   "icons": [
     {
-      "src": "/assets/icons-192.png",
+      "src": "/WordCube/assets/icons-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/icons-512.png",
+      "src": "/WordCube/assets/icons-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
