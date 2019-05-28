@@ -134,3 +134,15 @@
 		}
 	}
 }
+
+
+@media all and (max-width: 650px) {
+	#cube {
+		width: 90vw;
+		height: 90vw;
+	}
+	ul li {
+		font-size: 6vw;
+		margin:7px;
+	}
+}
