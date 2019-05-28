@@ -1,145 +1,147 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>WordCube</title>
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.ico" />
     <script type="text/javascript" src="./lib/bundle.js"></script>
     <script src="https://use.fontawesome.com/b4d42bf7d5.js"></script>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="manifest" href="./manifest.json" />
 
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106974664-2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-106974664-2"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)};
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-106974664-2');
+      gtag("config", "UA-106974664-2");
     </script>
-
   </head>
   <body>
     <nav>
-      <div id="timer" style="width: 0%;">
-      </div>
+      <div id="timer" style="width: 0%;"></div>
     </nav>
     <div id="game-over-modal">
-
       <div id="game-over">
-
         <h1>Game Over</h1>
 
         <p>Your Score: <span id="modal-score"></span></p>
 
         <button type="button" id="play-again">Play Again</button>
-
       </div>
     </div>
     <div id="main">
-
-
-    <aside id="welcome">
-      <div>
-      <div id="title">
-        <div id="title-word">
-          <span>W</span>
-          <span>O</span>
-          <span>R</span>
-          <span>D</span>
+      <aside id="welcome">
+        <div>
+          <div id="title">
+            <div id="title-word">
+              <span>W</span>
+              <span>O</span>
+              <span>R</span>
+              <span>D</span>
+            </div>
+            <div class="extra"></div>
+            <div class="extra"></div>
+            <div id="title-cube">
+              <span>C</span>
+              <span>U</span>
+              <span>B</span>
+              <span>E</span>
+            </div>
+          </div>
+          <div id="instructions">
+            <h4>Welcome to WordCube!</h4>
+            <p>
+              <strong>The goal of the game is simple:</strong> Form as many
+              words as possible in under two minutes.
+            </p>
+            <p id="word-instructions">
+              Words can be formed from adjacent letters (including diagonally
+              adjacent) and must be at least four characters in length.
+              <span id="score-instructions"
+                >Each word is scored according to its length.</span
+              >
+            </p>
+            <p><strong>Have fun!</strong></p>
+            <table id="score-scheme">
+              <thead>
+                <th>Characters</th>
+                <th>Points</th>
+              </thead>
+              <tr>
+                <td>4 Characters</td>
+                <td>1 Point</td>
+              </tr>
+              <tr>
+                <td>5 Characters</td>
+                <td>2 Points</td>
+              </tr>
+              <tr>
+                <td>6 Characters</td>
+                <td>3 Points</td>
+              </tr>
+              <tr>
+                <td>7 Characters</td>
+                <td>5 Points</td>
+              </tr>
+              <tr>
+                <td>8+ Characters</td>
+                <td>11 Points</td>
+              </tr>
+            </table>
+          </div>
+          <button type="button" name="button" id="start">Start</button>
         </div>
-        <div class="extra"></div>
-        <div class="extra"></div>
-        <div id="title-cube">
-          <span>C</span>
-          <span>U</span>
-          <span>B</span>
-          <span>E</span>
-        </div>
 
-      </div>
-      <div id="instructions">
-        <h4>Welcome to WordCube!</h4>
-        <p><strong>The goal of the game is simple:</strong>
-          Form as many words as possible in under two minutes.</p>
-          <p id="word-instructions"> Words can be formed from adjacent letters (including diagonally adjacent) and must be at least four characters in length.
-          <span id="score-instructions">Each word is scored according to its length.</span></p>
-          <p><strong>Have fun!</strong></p>
-          <table id="score-scheme">
-            <thead>
-              <th>Characters</th>
-              <th>Points</th>
-            </thead>
-            <tr>
-              <td>4 Characters</td>
-              <td>1 Point</td>
-            </tr>
-            <tr>
-              <td>5 Characters</td>
-              <td>2 Points</td>
-            </tr>
-            <tr>
-              <td>6 Characters</td>
-              <td>3 Points</td>
-            </tr>
-            <tr>
-              <td>7 Characters</td>
-              <td>5 Points</td>
-            </tr>
-            <tr>
-              <td>8+ Characters</td>
-              <td>11 Points</td>
-            </tr>
-          </table>
+        <footer>
+          &copy; Mendel Konikov <br />
 
+          <a href="http://mkonikov.com"
+            ><i class="fa fa-briefcase" aria-hidden="true"></i> Portfolio</a
+          >
 
+          <a href="https://github.com/mkonikov"
+            ><i class="fa fa-github" aria-hidden="true"></i> Github</a
+          >
 
-      </div>
-      <button type="button" name="button" id="start">Start</button>
-      </div>
-
-      <footer> &copy; Mendel Konikov <br>
-
- <a href="http://mkonikov.com"><i class="fa fa-briefcase" aria-hidden="true"></i> Portfolio</a>
-
- <a href="https://github.com/mkonikov"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-
- <a href="https://www.linkedin.com/in/mkonikov"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
-      </footer>
-
-    </aside>
-    <aside id="guessed-contain">
-
-
+          <a href="https://www.linkedin.com/in/mkonikov"
+            ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            LinkedIn</a
+          >
+        </footer>
+      </aside>
+      <aside id="guessed-contain">
         <h3>Words Found</h3>
-        <ul id="guessed-words">
+        <ul id="guessed-words"></ul>
+      </aside>
 
-        </ul>
+      <section id="game-area">
+        <div id="selection"></div>
+        <div id="cube">
+          <ul></ul>
+        </div>
 
-
-    </aside>
-
-    <section id="game-area">
-      <div id="selection">
-
-      </div>
-      <div id="cube">
-        <ul>
-
-        </ul>
-      </div>
-
-<div id="score-contain">
-  <span id="score"></span> <span id="high-score"></span>
-</div>
-
-    </section>
-
-
+        <div id="score-contain">
+          <span id="score"></span> <span id="high-score"></span>
+        </div>
+      </section>
     </div>
 
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/lib/sw.js").then(function() {
+          console.log("Service Worker Registered");
+        });
+      }
+    </script>
   </body>
 </html>
