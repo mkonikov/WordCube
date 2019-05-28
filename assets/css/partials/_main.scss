@@ -29,3 +29,9 @@ footer, footer a {
   color: #2d667d;
   line-height: 1.5;
 }
+
+@media all and (max-width: 650px) {
+  #main {
+    flex-wrap: wrap-reverse;
+  }
+}
