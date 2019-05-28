@@ -137,6 +137,9 @@
 
 
 @media all and (max-width: 650px) {
+	#game-area {
+		padding: 5vw;
+	}
 	#cube {
 		width: 90vw;
 		height: 90vw;

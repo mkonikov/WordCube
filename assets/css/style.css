@@ -217,6 +217,8 @@ button::-moz-focus-inner {
     margin: 15px; } }
 
 @media all and (max-width: 650px) {
+  #game-area {
+    padding: 5vw; }
   #cube {
     width: 90vw;
     height: 90vw; }
@@ -388,6 +390,8 @@ footer, footer a {
   border-radius: 6px; }
 
 @media all and (max-width: 550px) {
+  .game-on aside#welcome {
+    display: none; }
   #start, #play-again {
     position: fixed;
     bottom: 15px;

@@ -77,6 +77,9 @@
 }
 
 @media all and (max-width: 550px) {
+	.game-on aside#welcome {
+		display: none;
+	}
 	#start, #play-again {
 		position: fixed;
 		bottom: 15px;
